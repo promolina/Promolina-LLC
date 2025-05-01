@@ -1,0 +1,23 @@
+<section class="bg-white text-dark py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-3">Why You Need a Website</h2>
+    <p class="lead mb-5">
+      Your work speaks for itself — but only if people can find it. A clean website makes you look legit, builds trust, and helps you win jobs.
+    </p>
+
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-semibold">📱 Clients Expect It</h5>
+        <p class="text-muted">People Google before they call. If they can’t find you, they’ll find someone else.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-semibold">🔒 Builds Credibility</h5>
+        <p class="text-muted">A professional site tells people you’re real, reliable, and ready to work.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-semibold">💸 Gets You Leads</h5>
+        <p class="text-muted">You’ll look sharp on Google, Facebook, business cards — wherever you send clients.</p>
+      </div>
+    </div>
+  </div>
+</section>

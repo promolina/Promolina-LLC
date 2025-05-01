@@ -1,0 +1,28 @@
+<!-- PRICING -->
+   <section class="bg-light text-dark py-5">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-3">I’m Building My Business — Let’s Build Yours Too</h2>
+      <p class="lead mb-4">
+        Right now, I’m offering full websites for contractors at a special rate — <strong>$300–$500</strong> — depending on your needs.
+        It’s my way of building trust while I grow my business from the ground up.
+      </p>
+      <p class="mb-4">
+        This is a limited-time offer for early clients. Once I’m fully booked and established, my rates will go up — because so will the value I deliver.
+        So if you’ve been waiting to invest in your business, this is your moment.
+      </p>
+      <a href="#contact" class="btn btn-primary btn-lg">Lock In Your Spot</a>
+    </div>
+  </section>
+
+  <section class="bg-light text-dark py-5">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-3">Hey — I'm Just Getting Started, Too</h2>
+      <p class="lead mb-4">
+        I’m launching this business and working with a handful of early clients to build a track record — and right now I’m offering full websites for <strong>$300–$500</strong>.
+      </p>
+      <p class="mb-4">
+        Once I’m booked and established, my prices will go up. But if you jump in now, you’ll get personal attention, clear communication, and a clean, custom site for a fraction of what most agencies charge.
+      </p>
+      <a href="#contact" class="btn btn-primary btn-lg">Let’s Talk</a>
+    </div>
+  </section>

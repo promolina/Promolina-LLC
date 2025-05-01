@@ -1,0 +1,25 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+
+.nav-link {
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  font-size: 1.1rem;
+  color: #f26933; /* Optional: adds color on hover */
+}
+
+
+.navbar-brand img {
+  vertical-align: middle;
+}
+
+
+/* .nav-link.active {
+  font-weight: bold;
+  border-bottom: 2px solid #f26933;
+} */

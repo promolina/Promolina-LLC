@@ -1,0 +1,25 @@
+<section class="bg-light text-dark py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Text -->
+        <div class="col-md-6">
+          <h2 class="fw-bold mb-3">You're Not Just Buying a Website. You're Hiring a Partner.</h2>
+          <p class="mb-4">Most contractors don’t have time for tech. I work directly with you, explain everything simply, and make sure your website works as hard as you do.</p>
+          <ul class="list-unstyled">
+            <li>✅ No tech jargon</li>
+            <li>✅ Speak to a real person</li>
+            <li>✅ Built for your trade</li>
+            <li>✅ Updates by call or text</li>
+          </ul>
+        </div>
+  
+        <!-- Visual / Testimonial -->
+        <div class="col-md-6 text-center">
+          <blockquote class="blockquote">
+            <p class="mb-3 fst-italic">“I didn’t even know what hosting was. Promolina handled everything.”</p>
+            <footer class="blockquote-footer">Joe, Painter in Modesto</footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
