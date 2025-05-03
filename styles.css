@@ -3,6 +3,159 @@ body, html {
   padding: 0;
 }
 
+body {
+  background-image: url(./assets/images/coding-bg.jpeg);
+  background-size: cover;
+  background-attachment: fixed; /* optional for parallax feel */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* *****************************
+********
+header
+
+*******************************
+*******/
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.01); /* light blur */
+  backdrop-filter: blur(10px); /* the actual blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* optional */
+}
+
+.navbar-toggler-icon {
+  filter: brightness(0) invert(1); /* Inverts the dark icon to white */
+}
+
+.navbar-collapse {
+  background-color: transparent !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+
+
+.navbar-nav .nav-link {
+  font-weight: 600; /* Bold without overdoing it */
+  color: #fff;       /* Ensure contrast */
+}
+
+@media (max-width: 767.98px) {
+  .hero .col-md-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+
+
+/* *************************************************** */
+
+
+.hero {
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 600px; /* or whatever height you need */
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 6vw, 3.3rem); /* scales between 32px and 48px */
+  line-height: 1.2;
+}
+
+
+/* Enhanced CTA Styles */
+.blob-btn {
+  font-size: 1.35rem;
+  font-weight: 600;
+  padding: 1rem 2.25rem;
+  border: none;
+  border-radius: 999px;
+  color: #fff;
+  background: 
+    radial-gradient(circle at 30% 30%, rgba(255, 170, 0, 0.2), transparent 40%),
+    radial-gradient(circle at 70% 70%, rgba(255, 85, 0, 0.2), transparent 40%),
+    #f26933;
+  background-size: 200% 200%;
+  animation:
+    ctaPulse 2.5s ease-in-out infinite,
+    ctaVibrate 15s ease-in-out infinite alternate;
+  box-shadow:
+    0 0 10px rgba(255, 120, 0, 0.6),
+    0 0 25px rgba(255, 85, 0, 0.3);
+  transition: transform 0.2s ease;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  transition:
+  transform 0.2s ease,
+  background 0.3s ease-in-out,
+  box-shadow 0.3s ease-in-out,
+  filter 0.3s ease-in-out,
+  color 0.3s ease-in-out;
+
+}
+
+.blob-btn:hover {
+  transform: scale(1.08);
+  box-shadow:
+    0 0 15px rgba(255, 140, 0, 0.8),
+    0 0 30px rgba(255, 85, 0, 0.5);
+    
+}
+
+/* Pulse effect */
+@keyframes ctaPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+}
+
+/* Subtle animated background blobs */
+@keyframes ctaVibrate {
+  0% {
+    background-position: 20% 20%, 80% 80%;
+  }
+  100% {
+    background-position: 80% 20%, 20% 80%;
+  }
+}
+
+/* ************************************** */
+/* ************************************** */
+
+
+/* NAVBAR */
+@media (max-width: 768px) {
+  
+  .hero {
+    min-height: 100vh; /* Reduce height on smaller screens */
+  }
+
+  .hero h1 {
+    background: rgba(0, 0, 0, 0.5); /* semi-transparent dark background */
+    backdrop-filter: blur(6px);    /* the blur effect */
+    -webkit-backdrop-filter: blur(6px); /* Safari support */
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: block;
+    width: 100%;
+  }
+  
+}
 
 .nav-link {
   transition: all 0.2s ease-in-out;
@@ -18,8 +171,234 @@ body, html {
   vertical-align: middle;
 }
 
+.navbar-nav a {
+  color: aliceblue;
+}
+
+.brand {
+  height: 40px;
+  width: auto;
+}
+
+/* launch banner */
+
+.launch-wrapper {
+  display: inline-block;
+  transform: scale(0.5) rotate(-2deg);
+  transform-origin: top center;
+  
+  
+  padding: 4rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+
+.launch-offer-section {
+  background-color: black;
+
+  background-size: 1000px 1000px;
+  animation: starDrift 60s linear infinite;
+  background-size: 4px 4px;
+
+  background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
+
+
+
+  color: #f1f1f1;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.bg-glass-light {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+
+@keyframes starDrift {
+  from { background-position: 0 0; }
+  to { background-position: -1000px 1000px; }
+}
+
+.launch-offer-section h2 {
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+.launch-offer-section p {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+
 
 /* .nav-link.active {
   font-weight: bold;
   border-bottom: 2px solid #f26933;
 } */
+
+.launch-banner {
+  background: black;
+  padding: 2rem 1rem;
+  font-family: 'Georgia', serif; /* Or a consistent font */
+ 
+  background-color: #000; /* solid black */
+  padding: 2rem;
+  display: inline-block;
+}
+
+.launch-line {
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 0.1ch;
+  max-width: 12ch; /* force both lines to equal character width */
+  margin: 0 auto;
+}
+
+@keyframes dropIn {
+  from { opacity: 0; transform: translateY(-50px) scale(1.2); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+.offer-title {
+  animation: dropIn 0.6s ease-out;
+}
+
+.launch-title {
+  font-family: 'Courier New', monospace;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+  
+  background: repeating-linear-gradient(
+    -45deg,
+    #e63946,
+    #e63946 10px,
+    #d62828 10px,
+    #d62828 20px
+  );
+  background-color: black;
+  padding: 1rem;
+  display: inline-block;
+  box-shadow: 2px 2px 0 rgba(0,0,0,0.2);
+  transform: rotate(-2deg);
+}
+
+.process-section {
+  background-color: rgba(255, 255, 255, 0.01); /* light blur */
+  backdrop-filter: blur(10px); /* the actual blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  color: #fff;
+  padding: 4rem 0;
+}
+
+.process-card {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  text-align: center;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.process-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.process-card h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: 0.03em;
+}
+
+.process-card p {
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+
+
+/* scroll hero */
+
+.grid-blur-section {
+  min-height: 100vh;
+  padding-top: 70px; /* height of your header */
+  background-color: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  align-items: stretch;
+}
+
+.blur-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.grid-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.process-section {
+  height: calc(100vh - 80px); /* adjust if your header is taller or shorter */
+  background-color: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  height: auto;
+}
+
+.three-col-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  height: 100%;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.image-placeholder {
+  width: 100%;
+  padding-top: 100%; /* 1:1 aspect ratio */
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.two-column-section {
+  display: grid;
+  grid-template-columns: 1fr 33%;
+  width: 100vw;
+  height: 100vh;
+}
+
+.left-column {
+  background-color: black; /* Or any color */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-column {
+  background-color: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px)
+}
