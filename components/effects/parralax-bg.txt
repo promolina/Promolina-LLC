@@ -1,0 +1,5 @@
+background-image: url(./assets/images/coding-bg.jpeg);
+  background-size: cover;
+  background-attachment: fixed; /* optional for parallax feel */
+  background-position: center;
+  background-repeat: no-repeat;

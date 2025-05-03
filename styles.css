@@ -382,22 +382,23 @@ header {
   box-shadow: 0 0 10px rgba(0,0,0,0.15);
 }
 
-.test {
+.two-column-section {
   display: grid;
   grid-template-columns: 1fr 33%;
+  width: 100vw;
   height: 100vh;
+}
+
+.left-column {
+  background-color: black; /* Or any color */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-column {
   background-color: rgba(255, 255, 255, 0.01);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-}
-
-
-.col-1,
-.col-2 {
-  background-color: black; /* strong dark bg */
-  width: 100%;
-}
-
-.col-3 {
-  background-color: transparent;
+  -webkit-backdrop-filter: blur(10px)
 }
