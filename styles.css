@@ -11,18 +11,6 @@ body {
   background-repeat: no-repeat;
 }
 
-@media (max-width: 767.98px) {
-  body {
-    background-size: cover;
-  background-attachment: fixed; /* optional for parallax feel */
-  background-position: center;
-  background-repeat: no-repeat;
-  }
-
-}
-
-
-
 /* *****************************
 ********
 header
