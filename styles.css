@@ -11,6 +11,15 @@ body {
   background-repeat: no-repeat;
 }
 
+@media (max-width: 767.98px) {
+  body {
+    background-size: contain;         /* Fit the image instead of zooming */
+    background-attachment: scroll;    /* Prevent weird fixed issues on mobile */
+    background-position: top center;  /* Optional: center it better on tall screens */
+  }
+}
+
+
 /* *****************************
 ********
 header
