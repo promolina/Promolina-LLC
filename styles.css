@@ -49,6 +49,30 @@ header {
   color: #fff;       /* Ensure contrast */
 }
 
+
+.nav-link {
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  font-size: 1.1rem;
+  color: #f26933; /* Optional: adds color on hover */
+}
+
+
+.navbar-brand img {
+  vertical-align: middle;
+}
+
+.navbar-nav a {
+  color: aliceblue;
+}
+
+.brand {
+  height: 35px;
+  width: auto;
+}
+
 @media (max-width: 767.98px) {
   .hero .col-md-6 {
     padding-left: 1.5rem;
@@ -56,9 +80,28 @@ header {
   }
 }
 
+@media (max-width: 768px) {
+  
+  .hero {
+    min-height: 100vh; /* Reduce height on smaller screens */
+  }
+
+  .hero h1 {
+     /* semi-transparent dark background */
+    backdrop-filter: blur(6px);    /* the blur effect */
+    -webkit-backdrop-filter: blur(6px); /* Safari support */
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: block;
+    width: 100%;
+  }
+  
+}
 
 
-/* *************************************************** */
+/* *************************************************************************************************************************************************** */
+/* *************************************************************************************************************************************************** */
+/* *************************************************************************************************************************************************** */
 
 
 .hero {
@@ -137,49 +180,14 @@ header {
 
 /* ************************************** */
 /* ************************************** */
+/* ************************************** */
+/* ************************************** */
+/* ************************************** */
+/* ************************************** */
+/* ************************************** */
 
 
-/* NAVBAR */
-@media (max-width: 768px) {
-  
-  .hero {
-    min-height: 100vh; /* Reduce height on smaller screens */
-  }
 
-  .hero h1 {
-     /* semi-transparent dark background */
-    backdrop-filter: blur(6px);    /* the blur effect */
-    -webkit-backdrop-filter: blur(6px); /* Safari support */
-    padding: 1rem;
-    border-radius: 0.5rem;
-    display: block;
-    width: 100%;
-  }
-  
-}
-
-.nav-link {
-  transition: all 0.2s ease-in-out;
-}
-
-.nav-link:hover {
-  font-size: 1.1rem;
-  color: #f26933; /* Optional: adds color on hover */
-}
-
-
-.navbar-brand img {
-  vertical-align: middle;
-}
-
-.navbar-nav a {
-  color: aliceblue;
-}
-
-.brand {
-  height: 40px;
-  width: auto;
-}
 
 /* launch banner */
 
