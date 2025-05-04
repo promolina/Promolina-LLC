@@ -435,12 +435,3 @@ header {
   font-size: 1.2rem;
 }
 
-@media (max-width: 767.98px) {
-  body {
-    background-image: url('./assets/images/coding-bg.jpeg');
-    background-size: contain !important;
-    background-repeat: no-repeat !important;
-    background-position: top center !important;
-    background-attachment: scroll !important;
-  }
-}
