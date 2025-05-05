@@ -12,14 +12,19 @@ body, html {
   width: 100%;
   background-image: url('./assets/images/coding-bg.jpeg');
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   z-index: -1;
-  pointer-events: none; /* optional: makes sure it doesn't block clicks */
-  will-change: transform;
+  pointer-events: none;
+
+  /* GPU smoothing attempts */
+  will-change: transform, opacity;
   transform: translateZ(0);
   backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0); /* More aggressive on iOS */
+  -webkit-backface-visibility: hidden;
 }
+
 
 
 /* *****************************
