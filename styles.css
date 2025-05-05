@@ -3,23 +3,20 @@ body, html {
   padding: 0;
 }
 
-body {
-  background-image: url(./assets/images/coding-bg.jpeg);
+
+.bg-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url('./assets/images/coding-bg.jpeg');
   background-size: cover;
-  background-attachment: fixed; /* optional for parallax feel */
   background-position: center;
   background-repeat: no-repeat;
+  z-index: -1;
+  pointer-events: none; /* optional: makes sure it doesn't block clicks */
 }
-
-@supports (-webkit-touch-callout: none) {
-  body {
-    background-attachment: scroll; /* fallback for Safari */
-    background-size: contain; /* optional: avoids zooming */
-    background-position: center center;
-    min-height: 100vh;
-  }
-}
-
 
 
 /* *****************************
