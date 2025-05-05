@@ -15,7 +15,7 @@ body {
   body {
     background-attachment: scroll; /* fallback for Safari */
     background-size: contain; /* optional: avoids zooming */
-    background-position: top center;
+    background-position: center center;
   }
 }
 
