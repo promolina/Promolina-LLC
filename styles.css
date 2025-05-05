@@ -16,6 +16,8 @@ body, html {
   background-repeat: no-repeat;
   z-index: -1;
   pointer-events: none; /* optional: makes sure it doesn't block clicks */
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 
