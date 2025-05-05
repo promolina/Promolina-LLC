@@ -11,6 +11,15 @@ body {
   background-repeat: no-repeat;
 }
 
+@supports (-webkit-touch-callout: none) {
+  body {
+    background-attachment: scroll; /* fallback for Safari */
+    background-size: contain; /* optional: avoids zooming */
+    background-position: top center;
+  }
+}
+
+
 
 /* *****************************
 ********
