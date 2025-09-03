@@ -4,7 +4,7 @@ body, html {
 }
 
 body {
-  background-image: url(./assets/images/coding-bg.jpeg);
+  background-image: url(./assets/images/hero-bg-html.jpg);
   background-size: cover;
   background-attachment: fixed; /* optional for parallax feel */
   background-position: center;
